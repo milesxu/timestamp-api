@@ -22,4 +22,4 @@ app.get('/:timeString', (req, res) => {
     res.json(result);
 });
 
-app.listen(8080, () => console.log('express app is running!'));
+app.listen(process.env.port || 8080, () => console.log('express app is running!'));
